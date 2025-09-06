@@ -5,7 +5,7 @@
 This includes **only the installation** of the required tools.  
 **How to use** these tools is already explained clearly in the **Tutorial PDF shared on Microsoft Teams**, so we **won’t repeat usage steps here**.
 
-- **Git Repo Link**: [Link to this git repository](https://github.com/E0217-ESDCS/ESDCS_EDA_TOOLS)
+- **Git Repo Link**: [Link to this git repository](https://github.com/E0217-ESDCS/ESDCS_EDA_TOOLS) 
 ---
 
 ## Version Specs
