@@ -3,7 +3,7 @@
 
 ## Scope of this repo
 This includes **only the installation** of the required tools.  
-**How to use** these tools is already explained clearly in the **Tutorial PDF shared on Microsoft Teams**, so we **won’t repeat usage steps here**.
+**How to use** these tools is already explained clearly in the **Tutorial PDF shared on Microsoft Teams**. Please follow that PDF for the same.
 
 - **Git Repo Link**: [Link to this git repository](https://github.com/E0217-ESDCS/ESDCS_EDA_TOOLS) 
 ---
@@ -244,21 +244,39 @@ mkdir -p /Users/shubhamlanjewar/code/esdcs_docker
 
 ### Step 5: Download and load Docker Image
 
-Download the Docker image tar file.
-
-For Apple Silicon: `esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
-For Intel Processor: `esdcs-ubuntu-img-intel.tar` [esdcs-ubuntu-img-intel.tar](https://drive.google.com/file/d/1sWtr6MWsvSRsL9LkmINIU2ok0UTsdrWC/view?usp=sharing)  
-
 This Docker image contains:  
 - **Ubuntu** (22.04.5 LTS), **Preinstalled tools** (iverilog, yosys, opensta, lsb_release, git, curl, vim, sudo, bash)
 - **tutorials & NANGATE_OPEN_STDCEL**: Its present at same location as mentioned in Tutorial PDF ( /home/esdcs/)
+
+**For Apple Silicon:**
+To pull the Docker image, run:
+```bash
+docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
+```
+**OR**
+
+If the `docker pull` command doesn't work (possibly due to pull limit reached), then download the Docker image tar file with the following link.
+
+`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
+
+Then, to load the Docker image, go to the location where `.tar` file is present and run: (you won't need this if you used `docker pull` command )
+
+```bash
+docker load -i esdcs-ubuntu-img.tar
+```
 
 To load the Docker image (for Apple silicon), go to the location where `.tar` file is present and run:
 ```bash
 docker load -i esdcs-ubuntu-img.tar
 ```
 
-For Intel processor, run:
+**For Intel processor:**
+Download the Docker image tar file with followin link.
+
+`esdcs-ubuntu-img-intel.tar` [esdcs-ubuntu-img-intel.tar](https://drive.google.com/file/d/1sWtr6MWsvSRsL9LkmINIU2ok0UTsdrWC/view?usp=sharing)  
+
+Then, to load the Docker image, go to the location where `.tar` file is present and run:
+
 ```bash
 docker load -i esdcs-ubuntu-img-intel.tar
 ```
