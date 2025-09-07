@@ -260,19 +260,19 @@ If the `docker pull` command doesn't work (possibly due to the pull limit reache
 
 `esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
 
-Then, to load the Docker image, go to the location where `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
+Then, to load the Docker image, go to the location where the `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
 
 ```bash
 docker load -i esdcs-ubuntu-img.tar
 ```
 
-**For Intel processor:**(Not tested yet)
+**For Intel processor:**(Not tested yet. Let us know if you face any issues.)
 
 Download the Docker image tar file with the following link.
 
 `esdcs-ubuntu-img-intel.tar` [esdcs-ubuntu-img-intel.tar](https://drive.google.com/file/d/1sWtr6MWsvSRsL9LkmINIU2ok0UTsdrWC/view?usp=sharing)  
 
-Then, to load the Docker image, go to the location where `.tar` file is present and run:
+Then, to load the Docker image, go to the location where the `.tar` file is present and run:
 
 ```bash
 docker load -i esdcs-ubuntu-img-intel.tar
