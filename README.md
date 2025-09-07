@@ -287,16 +287,18 @@ Run the container for the very first time:
 > ⚠️ Please replace `/Users/shubhamlanjewar/code/esdcs_docker` with **`your_path`**
 
 For Apple Silicon:
-If you used the `docker pull` command in step 5, then use the following command.
+
+If you used the `docker pull` command in step 5, use the following command.
 ```bash
 docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   shubhamlanjewar97/esdcs-ubuntu-img:latest
 ```
-Otherwise, if you used the  `docker load` command in step 5, then use the following command.
+Otherwise, if you used the  `docker load` command in step 5, use the following command instead.
 ```bash
 docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   esdcs-ubuntu-img
 ```
 
 For Intel processor:
+
 ```bash
 docker run -it --name esdcs-ubuntu-intel   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   esdcs-ubuntu-img-intel
 ```
