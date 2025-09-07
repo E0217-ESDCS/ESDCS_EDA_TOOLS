@@ -249,6 +249,7 @@ This Docker image contains:
 - **tutorials & NANGATE_OPEN_STDCEL**: It's present at the same location as mentioned in the Tutorial PDF ( /home/esdcs/)
 
 **For Apple Silicon:**
+
 To pull the Docker image, run:
 ```bash
 docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
@@ -265,7 +266,8 @@ Then, to load the Docker image, go to the location where `.tar` file is present 
 docker load -i esdcs-ubuntu-img.tar
 ```
 
-**For Intel processor:**
+**For Intel processor:**(Not tested yet)
+
 Download the Docker image tar file with the following link.
 
 `esdcs-ubuntu-img-intel.tar` [esdcs-ubuntu-img-intel.tar](https://drive.google.com/file/d/1sWtr6MWsvSRsL9LkmINIU2ok0UTsdrWC/view?usp=sharing)  
