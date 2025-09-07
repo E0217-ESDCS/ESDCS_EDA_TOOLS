@@ -130,7 +130,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 dism.exe /online /enable-feature /featurename:Microsoft-Hyper-V-All /all /norestart
 bcdedit /set hypervisorlaunchtype Auto
 ```
-Then reboot. Then again try the first command.
+Then reboot. Then again, try the first command.
 
 #### Step 2: Open Ubuntu (WSL shell)
 From the **Start Menu**, search and open **Ubuntu 22.04 LTS**, or run the following command in CMD:
@@ -156,7 +156,7 @@ gtkwave -h
 lsb_release -a
 ```
 
-(Mandatory : Please refer Annexure A for required folders)  
+(Mandatory: Please refer to Annexure A for the required folders)  
 
 #### Notes
 
@@ -175,7 +175,7 @@ wsl --unregister Ubuntu
 
 ### 3️⃣ Option 3: Installing Ubuntu 22.04.5 in VirtualBox
 
-To keep this repository concise, the detailed steps for this option are provided separately. You can refer the link below for a step-by-step guide:
+To keep this repository concise, the detailed steps for this option are provided separately. You can refer to the link below for a step-by-step guide:
 
 **Git Repo Link**: [Installing Ubuntu 22.04.5 in VirtualBox](https://github.com/E0217-ESDCS/ESDCS_EDA_Ubuntu_on_VBox)
 
@@ -226,13 +226,13 @@ Download and install Docker Desktop for Mac (For **Intel Macs** → use Intel ve
 
 After installation:  
 1. Launch **Docker Desktop** from Applications.  
-2. Log in with your **Docker Hub** account [Simply login with google works].  
+2. Log in with your **Docker Hub** account [Simply login with Google works].  
 
 ---
 
 ### Step 4: Prepare Workspace Directory
-Workspace directory will be shared directory between macOS and docker Ubuntu 22.04.5. Which means contents at this path present in macOS will be accessible in Ubuntu and vice versa. 
-Create such directory to store Docker-related files (Please change the path according to your needs):
+The workspace directory will be shared between macOS and Docker Ubuntu 22.04.5. Which means the contents at this path present in macOS will be accessible in Ubuntu and vice versa. 
+Create such a directory to store Docker-related files (Please change the path according to your needs):
 
 > ⚠️ Please replace `/Users/shubhamlanjewar/code/esdcs_docker` with **`your_path`**
 
@@ -246,7 +246,7 @@ mkdir -p /Users/shubhamlanjewar/code/esdcs_docker
 
 This Docker image contains:  
 - **Ubuntu** (22.04.5 LTS), **Preinstalled tools** (iverilog, yosys, opensta, lsb_release, git, curl, vim, sudo, bash)
-- **tutorials & NANGATE_OPEN_STDCEL**: Its present at same location as mentioned in Tutorial PDF ( /home/esdcs/)
+- **tutorials & NANGATE_OPEN_STDCEL**: It's present at the same location as mentioned in the Tutorial PDF ( /home/esdcs/)
 
 **For Apple Silicon:**
 To pull the Docker image, run:
@@ -255,23 +255,18 @@ docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
 ```
 **OR**
 
-If the `docker pull` command doesn't work (possibly due to pull limit reached), then download the Docker image tar file with the following link.
+If the `docker pull` command doesn't work (possibly due to the pull limit reached), then download the Docker image tar file with the following link.
 
 `esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
 
-Then, to load the Docker image, go to the location where `.tar` file is present and run: (you won't need this if you used `docker pull` command )
+Then, to load the Docker image, go to the location where `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
 
-```bash
-docker load -i esdcs-ubuntu-img.tar
-```
-
-To load the Docker image (for Apple silicon), go to the location where `.tar` file is present and run:
 ```bash
 docker load -i esdcs-ubuntu-img.tar
 ```
 
 **For Intel processor:**
-Download the Docker image tar file with followin link.
+Download the Docker image tar file with the following link.
 
 `esdcs-ubuntu-img-intel.tar` [esdcs-ubuntu-img-intel.tar](https://drive.google.com/file/d/1sWtr6MWsvSRsL9LkmINIU2ok0UTsdrWC/view?usp=sharing)  
 
@@ -343,7 +338,7 @@ Ubuntu 22.04 with OpenRoad: [![Google Drive](https://img.shields.io/badge/Google
 
 ### 🔹 Annexure C: Useful Docker Commands(Mandatory)
 
-List Docker containers(this also shows the status of containers also e.g. exited, etc):
+List Docker containers(this also shows the status of containers also e.g., exited, etc):
 [For Intel processors, use `esdcs-ubuntu-img-intel` instead of `esdcs-ubuntu-img`.
 
 ```bash
