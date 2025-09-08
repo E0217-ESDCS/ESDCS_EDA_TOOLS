@@ -103,19 +103,10 @@ Enable shared folder
  ```bash
 sudo adduser $USER vboxsf
 ```
-Steps to set up the Shared Folder are shown in the following video from timestamp 9:25 onwards.
-
-📺 **Video Walkthrough(from 9:25 onwards):** [Ubuntu on VM few setups (9:25 onwards)](https://youtu.be/E_-FE6aHIUA?t=565)  
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/E_-FE6aHIUA?t=565))
     
 ---
 
 ### 2️⃣ Option 2: WSL (Windows Subsystem for Linux)
-
-
-📺 **Video Walkthrough:** [EDA Tools Installation on WSL](https://youtu.be/qvrV6PENzNk)  
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/qvrV6PENzNk)
-
 
 #### Step 1: Enable WSL and Install Ubuntu 22.04.5
 Open CMD or PowerShell as Administrator and run:
@@ -197,8 +188,6 @@ Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthe
 
 ---
 ## Installation Steps
-📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/3GBMIc1RFXI)  
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/3GBMIc1RFXI)
 
 ### Step 1: Install Homebrew
 [Homebrew](https://brew.sh) is the package manager for macOS.  
