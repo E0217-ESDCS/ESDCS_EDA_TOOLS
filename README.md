@@ -117,7 +117,7 @@ It has preinstalled tools (iverilog, gtkwave, opensta, yosys). It also has folde
 
 #### Step 5: Setting up Shared Folder
 
-Enable shared folder  
+Enable the shared folder  
  `Devices > Shared Folders`  
  Choose a Windows folder that you want to share with Ubuntu. Check Auto-mount and Make Permanent options.
  Then open a terminal and enter the following command
