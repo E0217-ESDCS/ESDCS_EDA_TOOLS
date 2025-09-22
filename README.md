@@ -63,9 +63,9 @@ We will use Docker to create a Linux environment for **iverilog, yosys, opensta*
 
 **Feel free to choose any one** of the options given above which is suitable to you.
 
-### 1️⃣ Option 1: If you are already using Ubuntu on Windows (whether on VirtualBox or WSL) for other courses
+### 1️⃣ Option 1: If you are already using Ubuntu on Windows
 
-If you are using Ubuntu on VirtualBox or as WSL for other courses for example TCP/IP, and **Ubuntu version is 22.04.5 or earlier,** then you can use the same Ubuntu environment for EDA tools for this course also. 
+If you are using **Ubuntu on VirtualBox or as WSL** for other courses for example TCP/IP, and **Ubuntu version is 22.04.5 or earlier,** then you can use the same Ubuntu environment for EDA tools for this course also. 
 
 You can check Ubuntu version with following commmand:
 
