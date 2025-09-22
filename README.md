@@ -25,6 +25,7 @@ This includes **only the installation** of the required tools.
 3. **WSL (Windows Subsystem for Linux)**
    
 Feel free to choose any one of the options given above which is suitable to you.
+
 ➡️ See the following steps for the installation process.
 
 ---
@@ -59,6 +60,8 @@ We will use Docker to create a Linux environment for **iverilog, yosys, opensta*
 
 
 ## Installation Options on Windows
+
+**Feel free to choose any one** of the options given above which is suitable to you.
 
 ### 1️⃣ Option 1: If you are already using Ubuntu on Windows (whether on VirtualBox or WSL) for other courses
 
