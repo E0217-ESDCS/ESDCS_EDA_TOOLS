@@ -251,9 +251,9 @@ This Docker image contains:
 
 **For Apple Silicon:**
 
-Download the Docker image tar file with the following link.
+Download the Docker image tar file from the following link.
 
-`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://indianinstituteofscience.sharepoint.com/:u:/s/ESDCS2025/Eb9ZeFbaO29ImwSZxUsqIaIBCq_LuwfTiouHd1AePNf63A?e=eBQx1M) 
+`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
 
 Then, to load the Docker image, go to the location where the `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
 
@@ -333,6 +333,7 @@ Download the following .ova file for OpenRoad.
 
 
 Ubuntu 22.04 with OpenRoad: [![Google Drive](https://img.shields.io/badge/Google%20Drive-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/10v-Vd8ko0wSxDf4Dp-N8UwcSCcY0qUrN/view?usp=sharing)
+
 
 ---
 
