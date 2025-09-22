@@ -33,7 +33,7 @@ Just run:
 ```bash
 sudo apt install -y iverilog gtkwave yosys opensta
 ```
-➡️ That’s all you need on Linux.
+➡️ That’s all you need on Linux Ubuntu 22.04.5 and earlier. (Latest version of Ubuntu i.e. 24.04 does not support opensta yet)
 
 ---
 
