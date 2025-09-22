@@ -239,15 +239,9 @@ This Docker image contains:
 
 **For Apple Silicon:**
 
-To pull the Docker image, run:
-```bash
-docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
-```
-**OR**
+Download the Docker image tar file with the following link.
 
-If the `docker pull` command doesn't work (possibly due to the pull limit reached), then download the Docker image tar file with the following link.
-
-`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
+`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://indianinstituteofscience.sharepoint.com/:u:/s/ESDCS2025/Eb9ZeFbaO29ImwSZxUsqIaIBCq_LuwfTiouHd1AePNf63A?e=oginX7)  
 
 Then, to load the Docker image, go to the location where the `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
 
@@ -271,17 +265,13 @@ docker load -i esdcs-ubuntu-img-intel.tar
 ---
 
 ### Step 6: Create and Run the Docker Container (First Time Only)
-Run the container for the very first time:
+Create and run the container for the very first time:
 
 > ⚠️ Please replace `/Users/shubhamlanjewar/code/esdcs_docker` with **`your_path`**
 
 For Apple Silicon:
 
-If you used the `docker pull` command in step 5, use the following command.
-```bash
-docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   shubhamlanjewar97/esdcs-ubuntu-img:latest
-```
-Otherwise, if you used the  `docker load` command in step 5, use the following command instead.
+Use the following command.
 ```bash
 docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   esdcs-ubuntu-img
 ```
