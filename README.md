@@ -110,7 +110,7 @@ For OpenRoad, download the .ova file from Annexure B. (This is optional. You won
   - **Username**: `esdcs`  
   - **Password**: `esdcs#123`
     
-It has preinstalled tools (iverilog, gtkwave, opensta, yosys). It also has folders `NANGATE_OPEN_STDCELL` and `tutorials` at location /home/esdcs/. 
+It has preinstalled tools (iverilog, gtkwave, opensta, yosys).
 
 
 
