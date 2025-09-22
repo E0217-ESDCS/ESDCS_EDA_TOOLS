@@ -169,7 +169,6 @@ gtkwave -h
 lsb_release -a
 ```
 
-(Mandatory: Please refer to Annexure A for the required folders)  
 
 #### Notes
 
@@ -324,9 +323,9 @@ surfer test.vcd
 # 📚 Annexures
 
 ### 🔹 Annexure A: Required Folders
-Apart from installing these tools, you will need the following two folders to follow the further steps of the Tutorial PDF. We will share these folders on Teams for everyone to download:
-- `NANGATE_OPEN_STDCELL` - already available on Microsoft Teams
-- `tutorials` - will be shared on Microsoft Teams
+Apart from installing these tools, you will need the following folder to follow the further steps of the Tutorial PDF.
+- `NANGATE_OPEN_STDCELL` - already available on Microsoft Teams at **General > Files > Simulation Models > NANGATE_OPEN_STDCELL**
+
 ---
 
 ### 🔹 Annexure B: .ova file for OpenRoad
