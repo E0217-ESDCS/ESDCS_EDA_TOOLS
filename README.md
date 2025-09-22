@@ -24,7 +24,7 @@ This includes **only the installation** of the required tools.
 2. **Preinstalled Ubuntu Image**
 3. **WSL (Windows Subsystem for Linux)**
    
-Feel free to choose any one of the options given above which is suitable to you.
+Please feel free to choose any one of the options given above that works best for you.
 
 ➡️ See the following steps for the installation process.
 
@@ -61,27 +61,27 @@ We will use Docker to create a Linux environment for **iverilog, yosys, opensta*
 
 ## Installation Options on Windows
 
-**Feel free to choose any one** of the options given above which is suitable to you.
+**Please feel free to choose any one** of the options given above that works best for you.
 
 ### 1️⃣ Option 1: If you are already using Ubuntu on Windows
 
 If you are using **Ubuntu on VirtualBox or as WSL** for other courses for example TCP/IP, and **Ubuntu version is 22.04.5 or earlier,** then you can use the same Ubuntu environment for EDA tools for this course also. 
 
-You can check Ubuntu version with following commmand:
+You can check the Ubuntu version with the following command:
 
 ```bash
 lsb_release -a
 ```
 
-So if version is 22.04.5 or earlier, just open the terminal and run the following command 
+So if the version is 22.04.5 or earlier, just open the terminal and run the following command 
 
 ```bash
 sudo apt install -y iverilog gtkwave yosys opensta
 ```
 
-If you are  using later versions of Ubuntu (for example 24.04) then it won't work for these tools please choose any one of the following option. 
+If you are  using later versions of Ubuntu (for example, 24.04) then it won't work for these tools. Please choose any one of the following options. 
 
-### 2️⃣ Option 2:Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise go to option 2)
+### 2️⃣ Option 2:Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise, go to option 2)
 
 #### Step 1: Download and Install VirtualBox
 Download from: [VirtualBox Download](https://www.virtualbox.org/wiki/Downloads)
@@ -127,8 +127,8 @@ sudo adduser $USER vboxsf
 ```
     
 ---
-### 3️⃣ Option 3:
-### 2️⃣ Option 2: WSL (Windows Subsystem for Linux)
+
+### 3️⃣ Option 3: WSL (Windows Subsystem for Linux)
 
 #### Step 1: Enable WSL and Install Ubuntu 22.04.5
 Open CMD or PowerShell as Administrator and run:
@@ -182,15 +182,6 @@ wsl --list --verbose
 wsl --unregister Ubuntu
 ```
 - Access Windows files inside WSL at `/mnt/c/...`. 
-
-
----
-
-### 3️⃣ Option 3: Installing Ubuntu 22.04.5 in VirtualBox
-
-To keep this repository concise, the detailed steps for this option are provided separately. You can refer to the link below for a step-by-step guide:
-
-**Git Repo Link**: [Installing Ubuntu 22.04.5 in VirtualBox](https://github.com/E0217-ESDCS/ESDCS_EDA_Ubuntu_on_VBox)
 
 ---
 
@@ -263,7 +254,7 @@ This Docker image contains:
 
 Download the Docker image tar file with the following link.
 
-`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://indianinstituteofscience.sharepoint.com/:u:/s/ESDCS2025/Eb9ZeFbaO29ImwSZxUsqIaIBCq_LuwfTiouHd1AePNf63A?e=oginX7)  
+`esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://indianinstituteofscience.sharepoint.com/:u:/s/ESDCS2025/Eb9ZeFbaO29ImwSZxUsqIaIBCq_LuwfTiouHd1AePNf63A?e=eBQx1M) 
 
 Then, to load the Docker image, go to the location where the `.tar` file is present and run: (you won't need this if you used the `docker pull` command)
 
