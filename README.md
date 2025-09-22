@@ -20,11 +20,12 @@ This includes **only the installation** of the required tools.
 ## Platforms
 
 ### 🔹 Windows (3 Options)
-1. **Preinstalled Ubuntu Image**
-2. **WSL (Windows Subsystem for Linux)**
-3. **Ubuntu 22.04.5 in VirtualBox** 
-
-➡️ See the following steps/link given above for the installation process.
+1. **If you are already using Ubuntu on Windows**
+2. **Preinstalled Ubuntu Image**
+3. **WSL (Windows Subsystem for Linux)**
+   
+Feel free to choose any one of the options given above which is suitable to you.
+➡️ See the following steps for the installation process.
 
 ---
 
@@ -40,7 +41,7 @@ sudo apt install -y iverilog gtkwave yosys opensta
 ### 🔹 macOS (15.6 Sequoia)
 We will use Docker to create a Linux environment for **iverilog, yosys, opensta**. We will use **Surfer** natively on macOS as waveform viewer.  
 
-➡️ See the following steps/link given above for the installation process.
+➡️ See the following steps for the installation process.
 
 ---
 
@@ -59,7 +60,25 @@ We will use Docker to create a Linux environment for **iverilog, yosys, opensta*
 
 ## Installation Options on Windows
 
-### 1️⃣ Option 1: Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise go to option 2)
+### 1️⃣ Option 1: If you are already using Ubuntu on Windows (whether on VirtualBox or WSL) for other courses (e.g. TCP/IP)
+
+If you are using Ubuntu on VirtualBox or as WSL for other courses for example TCP/IP, and **Ubuntu version is 22.04.5 or earlier,** then you can use the same Ubuntu environment for EDA tools for this course also. 
+
+You can check Ubuntu version with following commmand:
+
+```bash
+lsb_release -a
+```
+
+So if version is 22.04.5 or earlier, just open the terminal and run the following command 
+
+```bash
+sudo apt install -y iverilog gtkwave yosys opensta
+```
+
+If you are  using later versions of Ubuntu (for example 24.04) then it won't work for these tools please choose any one of the following option. 
+
+### 2️⃣ Option 2:Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise go to option 2)
 
 #### Step 1: Download and Install VirtualBox
 Download from: [VirtualBox Download](https://www.virtualbox.org/wiki/Downloads)
@@ -105,7 +124,7 @@ sudo adduser $USER vboxsf
 ```
     
 ---
-
+### 3️⃣ Option 3:
 ### 2️⃣ Option 2: WSL (Windows Subsystem for Linux)
 
 #### Step 1: Enable WSL and Install Ubuntu 22.04.5
