@@ -200,7 +200,6 @@ Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthe
 
 ---
 
-## Installation Steps
 📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/K2mgFNE60vA)  
 [![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/K2mgFNE60vA)
 
@@ -253,11 +252,16 @@ mkdir -p /Users/shubhamlanjewar/code/esdcs_docker
 
 This Docker image contains:  
 - **Ubuntu** (22.04.5 LTS), **Preinstalled tools** (iverilog, yosys, opensta, lsb_release, git, curl, vim, sudo, bash)
-- **tutorials & NANGATE_OPEN_STDCEL**: It's present at the same location as mentioned in the Tutorial PDF ( /home/esdcs/)
 
 **For Apple Silicon:**
 
-Download the Docker image tar file from the following link.
+To pull the Docker image, run:
+```bash
+docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
+```
+**OR**
+
+If the `docker pull` command doesn't work (possibly due to the pull limit reached), then download the Docker image tar file with the following link.
 
 `esdcs-ubuntu-img.tar` [esdcs-ubuntu-img.tar](https://drive.google.com/file/d/1KC3WvvtfOk1EqfyCcwYt11UYfv6uCh1o/view?usp=sharing)  
 
@@ -283,26 +287,28 @@ docker load -i esdcs-ubuntu-img-intel.tar
 ---
 
 ### Step 6: Create and Run the Docker Container (First Time Only)
-Create and run the container for the very first time:
+Run the container for the very first time:
 
 > ⚠️ Please replace `/Users/shubhamlanjewar/code/esdcs_docker` with **`your_path`**
 
-For Apple Silicon:
+**For Apple Silicon:**
 
-Use the following command.
+If you used the `docker pull` command in step 5, use the following command.
+```bash
+docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   shubhamlanjewar97/esdcs-ubuntu-img:latest
+```
+Otherwise, if you used the  `docker load` command in step 5, use the following command instead.
 ```bash
 docker run -it --name esdcs-ubuntu   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   esdcs-ubuntu-img
 ```
 
-For Intel processor:
+**For Intel processor:**
 
 ```bash
 docker run -it --name esdcs-ubuntu-intel   -v /Users/shubhamlanjewar/code/esdcs_docker:/macos_local   esdcs-ubuntu-img-intel
 ```
 
 This will take you to the Linux environment with user "esdcs". This Linux environment is running inside Docker.
-
-(Mandatory: Please refer to Annexure C for more Docker commands)  
 
 ✅ You will now be inside a Linux environment with **iverilog**, **yosys**, and **opensta** already installed.
 
