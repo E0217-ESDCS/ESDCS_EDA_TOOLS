@@ -201,8 +201,8 @@ Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthe
 ---
 
 ## Installation Steps
-📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/3GBMIc1RFXI)  
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/3GBMIc1RFXI)
+📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/K2mgFNE60vA)  
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/K2mgFNE60vA)
 
 ---
 ## Installation Steps
