@@ -199,6 +199,12 @@ wsl --unregister Ubuntu
 Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthesis tool), **opensta** (Static timing analysis), **Surfer** (Waveform viewer - used instead of GTKWave)  
 
 ---
+
+## Installation Steps
+📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/3GBMIc1RFXI)  
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/3GBMIc1RFXI)
+
+---
 ## Installation Steps
 
 ### Step 1: Install Homebrew
