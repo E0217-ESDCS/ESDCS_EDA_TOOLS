@@ -186,7 +186,7 @@ wsl --set-default <DistributionName>
 ```
 - To remove a WSL distribution:  
  ```powershell
-wsl --unregister Ubuntu
+wsl --unregister <DistributionName>
 ```
 - Access Windows files inside WSL at `/mnt/c/...`. 
 
