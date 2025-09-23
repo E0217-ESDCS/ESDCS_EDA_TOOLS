@@ -176,6 +176,14 @@ lsb_release -a
  ```powershell
 wsl --list --verbose
 ```
+- To start specific distro if multiple WSL are installed:
+ ```powershell
+wsl -d <DistributionName>
+```
+- To set specific distro default:
+ ```powershell
+wsl --set-default <DistributionName>
+```
 - To remove a WSL distribution:  
  ```powershell
 wsl --unregister Ubuntu
