@@ -81,7 +81,7 @@ sudo apt install -y iverilog gtkwave yosys opensta
 
 If you are  using later versions of Ubuntu (for example, 24.04) then it won't work for these tools. Please choose any one of the following options. 
 
-### 2️⃣ Option 2:Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise, go to option 2)
+### 2️⃣ Option 2: Preinstalled Ubuntu Image (If RAM >= 8GB && Disk Space > 25 GB you can go with this option. Otherwise, go to option 3)
 
 #### Step 1: Download and Install VirtualBox
 Download from: [VirtualBox Download](https://www.virtualbox.org/wiki/Downloads)
@@ -267,6 +267,8 @@ To pull the Docker image, run:
 ```bash
 docker pull shubhamlanjewar97/esdcs-ubuntu-img:latest
 ```
+If this command `docker pull` does not show any error then you can go to Step 6 now. Otherwise,
+
 **OR**
 
 If the `docker pull` command doesn't work (possibly due to the pull limit reached), then download the Docker image tar file with the following link.
@@ -344,7 +346,10 @@ surfer test.vcd
 
 ### 🔹 Annexure A: Required Folders
 Apart from installing these tools, you will need the following folder to follow the further steps of the Tutorial PDF.
-- `NANGATE_OPEN_STDCELL` - already available on Microsoft Teams at **General > Files > Simulation Models > NANGATE_OPEN_STDCELL**
+- `NANGATE_OPEN_STDCELL` - are available on Microsoft Teams at **General > Files > Simulation Models > NANGATE_OPEN_STDCELL**
+
+- Verilog files for example circuits (discussed in previous lab session and some more) are available on Microsoft Teams at **General > Files > Verilog Files**
+
 
 ---
 
