@@ -208,11 +208,16 @@ Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthe
 
 ---
 
+## Installation Options on Windows
+
+**Please feel free to choose any one** of the options given above that works best for you.
+
+### 1️⃣ Option 1: Docker on macOS
+
 📺 **Video Walkthrough:** [EDA Tools Installation on macOS](https://youtu.be/K2mgFNE60vA)  
 [![Watch on YouTube](https://img.shields.io/badge/Watch%20Now-red?logo=youtube&logoColor=white)](https://youtu.be/K2mgFNE60vA)
 
 ---
-## Installation Steps
 
 ### Step 1: Install Homebrew
 [Homebrew](https://brew.sh) is the package manager for macOS.  
@@ -333,6 +338,65 @@ Since we already know that our workspace directory is shared between macOS (`/Us
 surfer test.vcd
 ```
 
+
+    
+---
+
+
+
+### 2️⃣ Option 2: Ubuntu 22.04 on UTM (Apple Silicon)
+
+
+This guide explains how to run a **preinstalled Ubuntu 22.04 ARM64 VM** using **UTM on macOS Apple Silicon**.  
+It is recommanded to have at least **8 GB RAM** and **25 GB free disk space** for this option. But you can try even with **20 GB free disk space**. Less than **15 GB free disk space** is not recommanded at all. In case of lower RAM or disk space, use Option 1 (Docker).
+
+---
+
+### Step 1: Install UTM  
+
+Download and install UTM from : [UTM](https://mac.getutm.app)
+
+This is a virtualization app for macOS on Apple Silicon. [Similar to VirtualBox but more optimized for macOS on Apple Silicon] 
+
+---
+
+### Step 2: Download Preinstalled Ubuntu UTM Image  
+Download the prebuilt `.utm` image file from Google Drive:  
+
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-34A853?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1EQed3EkUCjg7oRKZQ4u0xFhEkjU5hruw/view?usp=sharing)
+
+Extract this file with **Archieve Utility**
+
+---
+
+### Step 3: Open the UTM Image  
+1. Open **UTM**.  
+2. Go to **File → Open**. 
+3. And select the extracted `.utm` file.  (Its better to copy this file at some other location than downloads since it will have all the data of VM)
+
+---
+
+### Step 4: Start and Use Ubuntu VM  
+When you start the VM it may say "Dispaly output is not active" for around 30 seconds. You may have to wait for it to get started.
+- Default credentials for VM:  
+  - **Username**: `esdcs`  
+  - **Password**: `esdcs#123`
+
+After login you can use the preinstalled tools immediately.
+
+---
+
+### Step 5: Change scale
+1. If text/icons looking too small, you can change the scale from 100% to 200% in Settings > Display > Scale. 
+
+
+### Step 6: Setup Shared Folder and Retina Mode
+1. Select the VM and click on setings (top right corner of UTM window)
+2. Go to **Display** and check **Retina Mode** if it is unckecked.
+3. Go to **Sharing** and make sure **Directory Share Mode** is set as **SPICE WebDAV** and select the path(path in macOS) of the folder which you want to share between VM and macOS.
+4. Also make sure **Shared Clipboard** is ckecked in **Sharing**
+5. This shared folder will be visible in **File Exploer > Other Locations** something like "SPICE client folder" (This may take about a minute for it to mount properly).
+6. There is a way to make this shared folder mount autoamtically at each boot and more reliable so that it won't take some time to access it. (You can search on google about how to do it. We may update it here later.)
 ---
 
 <div align="center">
