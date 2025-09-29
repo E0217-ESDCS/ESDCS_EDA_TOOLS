@@ -208,7 +208,7 @@ Here, we will install: **iverilog** (Verilog simulator), **yosys** (Logic synthe
 
 ---
 
-## Installation Options on Windows
+## Installation Options on macOS
 
 **Please feel free to choose any one** of the options given above that works best for you.
 
